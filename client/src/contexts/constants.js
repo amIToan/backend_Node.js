@@ -1,4 +1,4 @@
-const defaultUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' : 'lololol lenroi'
+const defaultUrl = process.env.NODE_ENV !== 'production' ? ' http://localhost:5000/api' : 'https://sleepy-retreat-46285.herokuapp.com/api'
 const local_token = 'LOCAL_TOKEN'
 const SET_LISTS = 'SET_LISTS'
 const ADD_POST = 'ADD_POST'
