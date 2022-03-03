@@ -1,0 +1,55 @@
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+
+{
+    "username": "taquangtoan",
+    "password": "toanpro4101998"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+
+{
+    "username": "taquangtoan23123123123",
+    "password": "toanpro4101998"
+}
+
+###
+POST http://localhost:5000/api/posting/usersPost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjFiNmFjOTI1NzkwMDI5ZDM2YTMxNjYiLCJpYXQiOjE2NDU5NjM5Nzd9.99ZtcOAJEvPOW27FLVY5mHdXM4gkrm4E6-H3oymKTPw
+
+{
+    "title" : "my seond post",
+    "description" : "xyz",
+    "url" : "google.com",
+    "status" : "TO LEARN"
+}
+###
+GET  http://localhost:5000/api/posting/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjFiNmFjOTI1NzkwMDI5ZDM2YTMxNjYiLCJpYXQiOjE2NDU5NjM5Nzd9.99ZtcOAJEvPOW27FLVY5mHdXM4gkrm4E6-H3oymKTPw
+
+###
+PUT  http://localhost:5000/api/posting/621b6bb67dcb98c19ad008e6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjFiNmFjOTI1NzkwMDI5ZDM2YTMxNjYiLCJpYXQiOjE2NDU5NjM5Nzd9.99ZtcOAJEvPOW27FLVY5mHdXM4gkrm4E6-H3oymKTPw
+
+{
+    "title" : "EDITED POST",
+    "description" : "xyz",
+    "url" : "TOILATHAOMOC.com",
+    "status" : "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posting/621b6bb67dcb98c19ad008e6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjFiNmFjOTI1NzkwMDI5ZDM2YTMxNjYiLCJpYXQiOjE2NDU5NjM5Nzd9.99ZtcOAJEvPOW27FLVY5mHdXM4gkrm4E6-H3oymKTPw
+
+
+
